@@ -1,0 +1,148 @@
+
+#lets do something:)
+"""Read the whole code for better understanding"""
+print('hello world'.upper());"""This will print text to upper case"""
+#First beginner line -_-
+print()
+#writing a statement in """..""" makes a docstring;
+print("""Doing some operations like division(/),multiplication(*),remainder(%),Quotient(//),
+exponentiation(**):\n see line 7 to  19""")
+print("\n")
+print(22/11)
+#gives an float 2.0;
+print(22*11)
+#gives multiplication 242;
+print(22%11)
+#gives remainder 0;
+print(22//11)
+#gives quotient 2;
+print(3**2)
+#gives 3^2 or also 3² .. 9;
+print()
+print("""Now operation between strings and numbers:\n see line 21 to 28""")
+print()
+print(3*"This is 3,")
+#prints 'This is 3'for 3 times;
+print('Eggs'+'Burnt')
+#Adds both the strings EggsBurnt;
+print("10"+"100")
+#Its not a number anything between '''' act as a strings , prints 10100
+print()
+print("""Now we can play with variables :\n see line 33 to 50""")
+print()
+
+anyname = "Simple"
+print(anyname)
+#Just we have assign a variable name as anyname and this variable have value of "Simple";
+anyvar = 333
+print(anyvar)
+#similiar way but instead of string we have assign number;
+#_____________________#
+#lets do operation with variables
+myvar = 1000
+yourvar = 10
+print(myvar/yourvar)
+#you can perform various operation mention at top
+input = input()
+print("This is your input:"+input)
+print()
+#This is an example of simple input , we can do various operation with input by using its variable and operation at top;
+#___There are inputs like interger input define as int(input());
+#___Second one is string input define as str(input());
+print("""Below some example of In-place-operators:
+like x+=5,y-=15 , x *=5 and so on..\n see line 54 to 60 """)
+#at top operations also can be done with variable sunch as:
+print()
+x = 3
+x+=5
+print(x)
+#here variable is x with value 3 and In-place-operator is like x+=5 also can be written as x =  x + 5 , which is 8;
+#Can run with any operation you may like;
+print()
+print("""Lets start boolean logic(if,else,elif):\n see line 63 to 92""");
+"""Here equal to(==), not equal to(!=), more than(>), less than(<) are used simply for more check Sololearn ^_^"""
+print()
+y1 = 15
+x1 = 5*3 #15 
+if y1 == x1:
+     print('y1 and x1 are equal')
+elif y1 > x1:
+     print("y1 is bigger than x1")
+else:
+     print("no conditions match")
+#(if)checks the value give in conditions and print  only when the condition is True else if condition is False it print another thing;
+print()
+print("""Another example:""")
+x2 = 5
+y2 = 10 #one can write here 5*2
+if x2 == y2:
+    print('x2 and y2 are equal')
+elif x2 < y2:
+   print("x2 is smaller than y2")
+else:
+   print("no conditions match")
+print()
+print("""Another example:""")
+y3 = 5
+x3 = 0
+if y3 == x3*0:
+     print("y3 and x3 are equal")
+elif  y3 <=x3:
+     print("x3 is more than or equal to y3")
+else:
+     print("No conditions match")
+print()
+print("""Going for while loops:\n see line 95 to 102""")
+print()
+i = 0
+while i <= 10:
+     i+=1
+     print(i)
+# var(variable) is 'i' with value 0.In while loop it is consider as less than 10 and in while loop with every loop 'i' is increased by 1 and prints i to 1,2,3,.....up to 10 as per loop;
+#In this while loop i+=1 is important because without i+=1 it will clause an infinite loop(You can cut i+=1 from loop and run the code);
+print()
+print("""Here is another example of while loop(break)\n see line 104 to 114""");
+print()
+u = 0
+while True:
+     print(u)
+     u+=1
+     if u > 8:
+      print("breaking")
+      break
+print()
+#In this while loop , while loop is true means loop will run infinite times but here is condition to avoid this as on line 108 if u is greater than 8 then loop will ''print breaking'' and here [break is most important];
+print("""Lets go on with Lists:\n see line 114 to 126""")
+print()
+list = [1,2,3,4,5]
+print(list)
+print(list[2])
+#here is our numerical list with variable as list between [..],print(list) gives all list in [] and print(list[2]) gives us list value 3!!!Remember for list number or string, In list start with 0 as like list[0] is 1 and list[1] is 2 and so on...
+"""Now adding lists with eachother"""
+alp = [1,2,3]
+blp = [4,5,6]
+add = alp + blp
+print(add);"""This will print added list [1,2,3,4,5,6]"""
+print(add[3]);"""Remember that now list has became [1,2,3,4,5,6] and its 3rd(list[3]) value is 4 :count start with 0:"""
+print()
+print("""Another example of List(for loop):\n see line 127 to 136""");
+print()
+names = ["Rex","Base","JJ","Ivory"]
+print(names)
+for nam in names:
+       print(nam + ",");"""This print a snake in front of names(list)"""
+       print("Tony" in names);"""This will check if Tony is the name in names(list) and will return True"""
+#By using for loop we can check each word or number in a list 
+print()
+print("""One more example for List(Slices):\n see line 136 to 146""")
+print()
+slice = [1,2,3,4,5,6,7,8,9,10]
+print(slice[0:3])
+#This will print the number in a list from index number with 0 and between 3 it means [1,2,3], slice[0] = 1 , slice[1] = 2, slice[2] = 3 it will not print slice[3] = 4 ;
+#Try changing number in print(slice[0:3) change number 0:3;
+print(slice[::-1]);"""This will reverse this list"""
+print(slice[0:8:2])
+#In this methode 1st argument is 0 which is 1 of list and argument 2nd is 8 which is index of list value is 9 and 3rd agrument 2 is distance betweeb the numbers of list;
+"""Try changing 3rd argument by 3 or 1 and 2nd arguent by yourself to see different results"""
+
+print("\n__________________________________________________")
