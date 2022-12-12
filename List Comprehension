@@ -1,0 +1,96 @@
+
+# List comprehension
+even_numbers = [i for i in range(11) if i % 2 == 0]
+print(even_numbers)
+
+# String slicing
+# [from_index:to_index] (0-indexed)
+anStr = "Apple"
+print(anStr[:3])
+print(anStr[3:])
+
+# Python supports negative string
+# indexes, that wrap from the end,
+# -1 pointing to the last character.
+# They can also be used, when slicing a string
+print("ABC"[-1]) # ==> C
+
+# Filtering data
+odd = lambda n:n % 2 == 1
+print(list(filter(odd, range(10))))
+
+# Map object
+doubled = lambda n:n * 2
+print(list(map(doubled, range(10))))
+
+# Tuples
+myTuple = (5, 8)
+print(myTuple[1]) # Print the second element.
+
+# String formatting.
+# %d == integer
+# %s == string
+# for more, search on google
+formattedStr = "%d + %d = %d %s" % (1, 2, 3, "! :)")
+print(formattedStr)
+
+print()
+
+# Data unpacking with the splat operator (*)
+def Sum(a, b, c):
+    return a + b + c
+    
+print(Sum(*[1, 2, 3]))
+# The call becomes Sum(1, 2, 3).
+
+def Multiply(base, times):
+    return base * times
+
+# Calling the function with a different parameter order.
+print(Multiply(times=5, base=2))
+
+print()
+
+# Import everything from a module.
+from math import *
+# Functions like gcd and factorial exist in the math module.
+g = gcd(18, 6) # Greatest common divisor.
+fac = factorial(10)
+
+print(g, fac)
+
+# Dictionary usage:
+dic = {
+   "apple": 1,
+   "banana": 2,
+   "lemon": 3
+}
+
+print()
+
+# Loop over the keys, by using the dictionary extension ".keys()"
+for key in dic.keys():
+    # access an element in the 'dic' by using the key we currently iterate over
+    print("%s : %d" % (key, dic[key]))
+    
+print()
+ 
+# Python supports heterogeneous lists meaning that they can hold multiple different datatypes.
+heteroGen = [1, 1.5, "eggs", [4,5,6]]
+print(heteroGen)
+
+# Recursion with an anonymous function.
+# Calculates the factorial of a positive number.
+f = lambda n:(n < 1 and 1) or n * f(n - 1)
+print(f(4))
+
+# Effectively the same as f2.
+ 
+def f2(n):
+    if n < 1:
+        return 1
+    else:
+        return n * f2(n - 1)
+print(f2(5))
+
+# Hope this helps some people! :)
